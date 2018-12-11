@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlUpOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/rate_per_piece"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=":"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DBpricePCS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="400 ₹"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlUpTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlUpOne"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/available_in_stock"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=":"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DBQtyPcs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="2000 pcs"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rlUpTwo"
+        android:layout_margin="5dp"
+        android:background="@color/colorGrayLight" />
+
+    <RelativeLayout
+        android:id="@+id/rlUpThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/rate_per_mt"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=":"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DBpriceMT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="1500 ₹"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlUpFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlUpThree"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/available_in_stock"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            tools:ignore="RelativeOverlap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=":"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DBQtyMT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="700 kgs"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlUpFour"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/edtxtaddorderqty"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="@string/inputQty"
+            android:inputType="numberDecimal"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <Spinner
+                android:id="@+id/spinnerMtPCS"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textEnd"
+                tools:ignore="RtlCompat,UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/imgDropDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_arrow_drop_down_blue_32dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btnAddItemOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/app_name"
+                android:gravity="center"
+                android:src="@drawable/ic_add_box_32dp" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

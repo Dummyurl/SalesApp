@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_activity_new" />
+
+    <EditText
+        android:id="@+id/edtExpenseTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/expense_title"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/rlUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="10dp">
+
+        <Spinner
+            android:id="@+id/spnrExpenseType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/edit_text_style"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:textAlignment="textStart"
+            tools:ignore="RtlCompat,UnusedAttribute" />
+
+        <ImageView
+            android:id="@+id/imgDropDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:focusable="false"
+            android:src="@drawable/ic_arrow_drop_down_blue_32dp" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtRemarks"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:gravity="start"
+        android:padding="10dp"
+        android:hint="@string/staff_remarks_text"
+        android:inputType="textMultiLine"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="@string/submit_text"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        tools:ignore="ButtonStyle" />
+
+</LinearLayout>
+

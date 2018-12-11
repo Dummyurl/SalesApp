@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <Spinner
+                android:id="@+id/spnrSalesmen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat,UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/imgDropDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_arrow_drop_down_blue_32dp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtAnnualTurnOver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableEnd="@drawable/rupee_indian"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/rupee_indian"
+            android:hint="@string/annual_turn_over"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtReferredBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableEnd="@drawable/ic_person_pin_gray_24dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_person_pin_gray_24dp"
+            android:hint="@string/referred_by_text"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <Spinner
+                android:id="@+id/spnrStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat,UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/imgDropDownNew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_arrow_drop_down_blue_32dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/back_text"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/llSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/save_text"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/submit_text"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/colorRed"
+                android:gravity="center"
+                android:text="@string/cancel_text"
+                android:visibility="gone"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILStructuralSteal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/structural_steel">
+
+            <EditText
+                android:id="@+id/edtStructuralSteal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILSteelPipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/steel_pipe">
+
+            <EditText
+                android:id="@+id/edtSteelPipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILCoilSheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/coil_sheet">
+
+            <EditText
+                android:id="@+id/edtCoilSheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILDurastrongWiremesh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/durastrong_wiremesh">
+
+            <EditText
+                android:id="@+id/edtDurastrongWiremesh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILDurastrogElectrodes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/durastrog_electrodes">
+
+            <EditText
+                android:id="@+id/edtDurastrogElectrodes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILGCSHEET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/gc_sheet">
+
+            <EditText
+                android:id="@+id/edtGCSHEET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tILSteel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="@string/steel">
+
+            <EditText
+                android:id="@+id/edtSteel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/back_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/next_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/save_text"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+
+</ScrollView>

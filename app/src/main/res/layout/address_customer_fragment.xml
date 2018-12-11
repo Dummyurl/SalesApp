@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/address_text">
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_address_city_gray_24dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_address_city_gray_24dp"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/zipcode">
+
+            <EditText
+                android:id="@+id/edtZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_zip_gray_24dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_address_city_gray_24dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <Spinner
+                android:id="@+id/spnrCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat,UnusedAttribute" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_arrow_drop_down_blue_32dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <Spinner
+                android:id="@+id/spnrState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat,UnusedAttribute" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_arrow_drop_down_blue_32dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <Spinner
+                android:id="@+id/spnrCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat,UnusedAttribute" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/ic_arrow_drop_down_blue_32dp" />
+
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="@string/same_as_current_address"
+            android:textSize="14sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/shipping_address_text">
+
+            <EditText
+                android:id="@+id/edtShippingAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_address_city_gray_24dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_address_city_gray_24dp"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/shipping_zipcode">
+
+            <EditText
+                android:id="@+id/edtShippingZipCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_zip_gray_24dp"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_address_city_gray_24dp"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:ignore="LabelFor" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/save_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:visibility="visible"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/next_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

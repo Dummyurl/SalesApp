@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvIDCardDocument"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:clickable="false"
+                android:drawableLeft="@drawable/browse_icon"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/browse_icon"
+                android:focusable="false"
+                android:hint="@string/id_card_document"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvIDCardDocumentBrowse"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/browse_text"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tvGSTCertificate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:clickable="false"
+                android:drawableLeft="@drawable/browse_icon"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/browse_icon"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/gst_certificate"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvGSTCertificateBrowse"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/browse_text"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tvAddressProof"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:clickable="false"
+                android:drawableLeft="@drawable/browse_icon"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/browse_icon"
+                android:focusable="false"
+                android:hint="@string/address_proof"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvAddressProofBrowse"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/browse_text"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tvVisitingCardFront"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:clickable="false"
+                android:drawableLeft="@drawable/browse_icon"
+                android:drawablePadding="10dp"
+                android:hint="@string/visiting_card_front"
+                android:drawableStart="@drawable/browse_icon"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvVisitingCardFrontBrowse"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/browse_text"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/tvVisitingCardBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_style"
+                android:clickable="false"
+                android:drawableLeft="@drawable/browse_icon"
+                android:drawablePadding="10dp"
+                android:hint="@string/visiting_card_back"
+                android:drawableStart="@drawable/browse_icon"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvVisitingCardBackBrowse"
+                android:layout_width="100dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/browse_text"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/back_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/save_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

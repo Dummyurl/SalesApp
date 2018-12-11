@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <TextView
+        android:id="@+id/tvCustomerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvOrderRef"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvEmpName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="10sp"
+        android:textStyle="normal"
+        tools:ignore="SmallSp" />
+
+</LinearLayout>
+

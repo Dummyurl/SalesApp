@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/edtContactPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_person_gray_24dp"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/ic_person_gray_24dp"
+            android:hint="@string/contact_person_text"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtContactPersonNameDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableRight="@drawable/ic_business_center_gray_24dp"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/ic_business_center_gray_24dp"
+            android:hint="@string/contact_person_des_text"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtContactPersonNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableRight="@drawable/ic_phone_gray_24dp"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/ic_phone_gray_24dp"
+            android:hint="@string/contact_number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtContactPersonEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableRight="@drawable/ic_mail_gray_24dp"
+            android:drawablePadding="5dp"
+            android:drawableEnd="@drawable/ic_mail_gray_24dp"
+            android:hint="@string/contact_person_email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/back_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/next_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

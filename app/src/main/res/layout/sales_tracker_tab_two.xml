@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/edtCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/customer_name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/contact_number"
+                android:inputType="number"
+                android:padding="10dp"
+                android:maxLength="10"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/spnrModeOfCommunication"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_style"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="textStart"
+                    tools:ignore="RtlCompat,UnusedAttribute" />
+
+                <ImageView
+                    android:id="@+id/imgDropDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/ic_arrow_drop_down_blue_32dp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edtPlaceVisited"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/place_visited"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/spnPurposeOfVisit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_style"
+                    android:overlapAnchor="false"
+                    android:spinnerMode="dropdown"
+                    android:textAlignment="textStart"
+                    tools:ignore="RtlCompat,UnusedAttribute" />
+
+                <ImageView
+                    android:id="@+id/imgDropDown1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:clickable="false"
+                    android:contentDescription="@string/app_name"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:src="@drawable/ic_arrow_drop_down_blue_32dp" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edtOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/order_text_mt"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtCollection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/collection_text_rs"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edtRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="@string/remarks_text"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/submit_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/activity_sales_details_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

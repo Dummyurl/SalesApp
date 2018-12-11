@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:id="@+id/rlUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+                android:id="@+id/spnrExpenseType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/edit_text_style"
+                android:overlapAnchor="false"
+                android:spinnerMode="dropdown"
+                android:textAlignment="textStart"
+                tools:ignore="RtlCompat,UnusedAttribute" />
+
+            <ImageView
+                android:id="@+id/imgDropDown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                android:focusable="false"
+                android:src="@drawable/ic_arrow_drop_down_blue_32dp" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edtSelectFromDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:drawableEnd="@drawable/ic_date_range_gray_24dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_date_range_gray_24dp"
+            android:focusable="false"
+            android:layout_marginTop="15dp"
+            android:focusableInTouchMode="false"
+            android:hint="@string/select_from_date_text"
+            android:inputType="date"
+            android:padding="10dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/edtSelectToDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:clickable="false"
+            android:drawableEnd="@drawable/ic_date_range_gray_24dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_date_range_gray_24dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:hint="@string/select_to_date_text"
+            android:inputType="date"
+            android:padding="10dp"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/edtStartLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableEnd="@drawable/ic_location_on_gray_24dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_location_on_gray_24dp"
+            android:hint="@string/start_location"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtEndLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableEnd="@drawable/ic_location_on_gray_24dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_location_on_gray_24dp"
+            android:hint="@string/end_location"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableEnd="@drawable/rupee_indian"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/rupee_indian"
+            android:hint="@string/amount_text"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edtRemarks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:hint="@string/remarks_text"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvBrowse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_text_style"
+                    android:clickable="false"
+                    android:drawableLeft="@drawable/browse_icon"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/browse_icon"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:gravity="center_vertical"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvBrowseText"
+                    android:layout_width="100dp"
+                    android:layout_height="42dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/browse_text"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    tools:ignore="RtlSymmetry" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter" />
+
+            <Button
+                android:id="@+id/btnAddExpense"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:contentDescription="@string/app_name"
+                android:text="@string/submit_text"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
